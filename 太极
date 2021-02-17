@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>帅</title>
+
+    <style>
+
+        body {
+
+            margin: 0;
+
+        }
+
+        .wrap {
+
+            position: relative;
+
+            width: 200px;
+
+            height: 100px;
+
+            margin: 200px auto;
+
+            /*background-color :#096;*/
+
+            /*border:1px solid #000;*/
+
+            border-width: 1px 1px 100px 1px;
+
+            border-style: solid;
+
+            border-radius: 50%;
+
+            animation: rote 2s linear infinite;
+
+        }
+
+       .wrap:before {
+
+            content: '';
+
+            position: absolute;
+
+            left: 0;
+
+            top: 50%;
+
+            width: 20px;
+
+            height: 20px;
+
+            background-color: #fff;
+
+            border: 40px solid #000;
+
+            border-radius: 50%;
+
+        }
+
+        .wrap:after {
+
+            content: '';
+
+            position: absolute;
+
+            right: 0;
+
+            top: 50%;
+
+            width: 20px;
+
+            height: 20px;
+
+            background-color: #000;
+
+            border: 40px solid #fff;
+
+            border-radius: 50%;
+
+        }
+
+        @keyframes rote{
+
+            0%{
+
+                transform: rotate(0deg); 
+
+            }
+
+            100%{
+
+                transform: rotate(360deg);  
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap"></div>
+
+</body>
+
+</html>
