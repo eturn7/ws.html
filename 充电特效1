@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .box {
+            width:800px;
+            height:800px;
+            background :#000;
+            margin:20px auto;
+            padding-top:20px;
+        }
+        .number{
+            width:200px;
+            height:200px;
+            text-align :center;
+            line-height :200px;
+            color:#fff;
+            position:absolute;
+            top:9%;
+            left:50%;
+            margin-left :-100px;
+            z-index:9;
+            font-size:30px;
+        }
+        .contrast{
+            width:100%;
+            height:100%;
+            background:#000;
+            position:relative;
+            filter:contrast(15);
+            animation:hueRotate 5s linear infinite;
+        }
+        @keyframes hueRotate{
+            0%{
+                filter:contrast(15) hue-rotate(0);
+            }
+            100%{
+                filter:contrast(15) hue-rotate(360deg);
+            }
+        }
+        .circle{
+            width:300px;
+            height:300px;
+            position:relative;
+            left:50%;
+            top:0;
+            margin-left:-150px;
+            filter:blur(8px);
+            animation:circleRotate 5s linear infinite;
+        }
+            .circle::before {
+                content: "";
+                width: 200px;
+                height: 200px;
+                background: #00ff6f;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 42% 38% 62% 49% / 45%;
+            }
+            .circle::after {
+                content: "";
+                width: 176px;
+                height: 178px;
+                background: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+            }
+            @keyframes circleRotate{
+                0%{
+                    transform:rotate(0deg);
+                }
+                100%{
+                    transform:rotate(360deg);
+                }
+            }
+            .bubble-home{
+                width:150px;
+                height:50px;
+                background:#00ff6f;
+                position:absolute;
+                bottom:0;
+                left:50%;
+                margin-left:-75px;
+                border-radius :150px 150px 0 0;
+                filter:blur(8px);
+            }
+            .bubble{
+                width:20px;
+                height:20px;
+                background:#00ff6f;
+                border-radius :100%;
+                position:absolute;
+                left:50%;
+                bottom:0;
+                transform:translate(-50%,0);
+                z-index:100;
+                animation:bubbleMoveUp 5s ease-in-out infinite;
+                filter:blur(5px);
+            }
+            .bubble:nth-child(1){
+                width:20px;
+                height:20px;
+                left:50%;
+                animation-duration :5s;
+                animation-delay:1s;
+            }
+
+                .bubble:nth-child(2) {
+                    width: 22px;
+                    height: 22px;
+                    left: 50%;
+                    animation-duration: 4s;
+                    animation-delay: 1.2s;
+                }
+                .bubble:nth-child(3) {
+                    width: 24px;
+                    height: 24px;
+                    left: 42%;
+                    animation-duration: 1.8s;
+                    animation-delay: 1.2s;
+                }
+                .bubble:nth-child(4) {
+                    width: 22px;
+                    height: 22px;
+                    left: 45%;
+                    animation-duration: 3.5s;
+                    animation-delay: 1.6s;
+                }
+                .bubble:nth-child(5) {
+                    width: 24px;
+                    height: 24px;
+                    left: 48%;
+                    animation-duration: 4.2s;
+                    animation-delay: 1.8s;
+                }
+                .bubble:nth-child(6) {
+                    width: 20px;
+                    height: 18px;
+                    left: 47%;
+                    animation-duration: 5.2s;
+                    animation-delay: 1.4s;
+                }
+                .bubble:nth-child(7) {
+                    width: 26px;
+                    height: 24px;
+                    left: 43%;
+                    animation-duration: 4.8s;
+                    animation-delay: 1.7s;
+                }
+                .bubble:nth-child(8) {
+                    width: 18px;
+                    height: 20px;
+                    left: 49%;
+                    animation-duration: 3.1s;
+                    animation-delay: 1.3s;
+                }
+        var.bubble:nth-child(9) {
+            width: 22px;
+            height: 22px;
+            left: 53%;
+            animation-duration: 3.3s;
+            animation-delay: 1.4s;
+        }
+        .bubble:nth-child(10) {
+            width: 20px;
+            height: 20px;
+            left: 55%;
+            animation-duration: 4.2s;
+            animation-delay: 2s;
+        }
+
+        .bubble:nth-child(11) {
+            width: 20px;
+            height: 20px;
+            left: 55%;
+            animation-duration: 3.4s;
+            animation-delay: 2.3s;
+        }
+
+        .bubble:nth-child(12) {
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 3.6s;
+            animation-delay: 1.7s;
+        }
+
+        .bubble:nth-child(13) {
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 2.1s;
+            animation-delay: 1.8s;
+        }
+
+        .bubble:nth-child(14) {
+            width: 24px;
+            height: 24px;
+            left: 54%;
+            animation-duration: 3.8s;
+            animation-delay: 1.6s;
+        }
+
+        .bubble:nth-child(15) {
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 2.5s;
+            animation-delay: 1.8s;
+        }
+
+        .bubble:nth-child(16) {
+            width: 20px;
+            height: 20px;
+            left: 51%;
+            animation-duration: 1.4s;
+            animation-delay: 1.5s;
+        }
+
+        .bubble:nth-child(17) {
+            width: 20px;
+            height: 20px;
+            left: 52%;
+            animation-duration: 1.8s;
+            animation-delay: 1.4s;
+        }
+
+        .bubble:nth-child(18) {
+            width: 20px;
+            height: 20px;
+            left: 53%;
+            animation-duration: 1.9s;
+            animation-delay: 1.6s;
+        }
+
+        var.bubble:nth-child(19) {
+            width: 20px;
+            height: 20px;
+            left: 54%;
+            animation-duration: 2.2s;
+            animation-delay: 1.6s;
+        }
+            @keyframes bubbleMoveUp{
+                0%{
+                    bottom:0;
+                }
+                100%{
+                    bottom:calc(100% - 260px);
+                }
+            }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="number">95.3%</div>
+        <div class="contrast">
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+           
+
+
+            <div class="bubble-home"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
