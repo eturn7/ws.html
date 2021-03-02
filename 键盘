@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>帅</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:Arial,Helvetica,Arial, Helvetica, sans-serif; 
+        }
+        .keystyle{
+            padding:20px;
+            position:absolute ;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background-color:rgb(200,208,214);
+            border-radius:10px;
+            display:grid;
+            grid-template-columns:repeat(30,30px);
+            grid-template-rows:repeat(5,60px);
+            grid-gap:5px;
+        }
+        .key{
+            background-color:rgb(240,248,255);
+            border-radius:5px;
+            grid-column:span 2;
+            font-size:20px;
+            text-align:center;
+            padding-top:17px;
+        }
+        .key:hover{
+            border:1px solid #fff;
+        }
+        .a:hover{
+            color:yellow;
+            box-shadow:2px -4px 10px 3px;
+            font-size:26px;
+        }
+        .b:hover {
+            color: rgb(58,184,58);
+            box-shadow: 2px -4px 10px 3px;
+            font-size: 26px;
+        }
+        .c:hover {
+            color: rgb(31,234,248);
+            box-shadow: 2px -4px 10px 3px;
+            font-size: 26px;
+        }
+        .d:hover {
+            color: pink;
+            box-shadow: 2px -4px 10px 3px;
+            font-size: 26px;
+        }
+        .e:hover {
+            color: orange;
+            box-shadow: 2px -4px 10px 3px;
+            font-size: 26px;
+        }
+        .Dalete{
+            grid-column:span 4;
+        }
+        .Tab {
+            grid-column: span 3;
+        }
+        .backslash  {
+            grid-column: span 3;
+        }
+        .Caps {
+            grid-column: span 4;
+        }
+        .Enter {
+            grid-column: span 4;
+        }
+        .leftShift {
+            grid-column: span 5;
+        }
+        .rightShift {
+            grid-column: span 5;
+        }
+        .leftCtrl {
+            grid-column: span 3;
+        }
+        .rightCtrl {
+            grid-column: span 3;
+        }
+        .Space {
+            grid-column: span 12;
+        }
+        .command {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="keystyle">
+        <div class="key a">`</div>
+        <div class="key a">1</div>
+        <div class="key a">2</div>
+        <div class="key a">3</div>
+        <div class="key a">4</div>
+        <div class="key a">5</div>
+        <div class="key a">6</div>
+        <div class="key a">7</div>
+        <div class="key a">8</div>
+        <div class="key a">9</div>
+        <div class="key a">0</div>
+        <div class="key a">-</div>
+        <div class="key a">=</div>
+        <div class="key a Dalete">Dalete</div>
+        <div class="key b Tab">Tab</div>
+        <div class="key b">Q</div>
+        <div class="key b">W</div>
+        <div class="key b">E</div>
+        <div class="key b">R</div>
+        <div class="key b">T</div>
+        <div class="key b">Y</div>
+        <div class="key b">U</div>
+        <div class="key b">I</div>
+        <div class="key b">O</div>
+        <div class="key b">P</div>
+        <div class="key b">[</div>
+        <div class="key b">]</div>
+        <div class="key b backslash">\</div>
+        <div class="key c Caps">Caps</div>
+        <div class="key c">A</div>
+        <div class="key c">S</div>
+        <div class="key c">D</div>
+        <div class="key c">F</div>
+        <div class="key c">G</div>
+        <div class="key c">H</div>
+        <div class="key c">J</div>
+        <div class="key c">K</div>
+        <div class="key c">L</div>
+        <div class="key c">;</div>
+        <div class="key c">'</div>
+        <div class="key c Enter">Enter</div>
+        <div class="key d leftShift">Shift</div>
+        <div class="key d">Z</div>
+        <div class="key d">X</div>
+        <div class="key d">C</div>
+        <div class="key d">V</div>
+        <div class="key d">B</div>
+        <div class="key d">N</div>
+        <div class="key d">M</div>
+        <div class="key d"><</div>
+        <div class="key d">></div>
+        <div class="key d">?</div>
+        <div class="key d rightShift">Shift</div>
+        <div class="key e leftCtrl">Ctrl</div>
+        <div class="key e ">Alt</div>
+        <div class="key e command">command</div>
+        <div class="key e Space">Space</div>
+        <div class="key e command">command</div>
+        <div class="key e">Alt</div>
+        <div class="key e rightCtrl">Ctrl</div>
+        <div class="key e">Fn</div>
+
+
+
+    </div>
+
+</body>
+</html>
